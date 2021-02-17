@@ -57,10 +57,10 @@ public class HelloWorldModel {
                 .map(pm -> pm.getContainingPage(currentResource))
                 .map(Page::getPath).orElse("");
 
-        message = "Hello World!\n"
+        message = "Hello AKQA!\n"
             + "Resource type is: " + resourceType + "\n"
             + "Current page is:  " + currentPagePath + "\n"
-            + "This is instance: " + settings.getSlingId() + "\n";
+            + "This is from AKQA Blueprint: " + settings.getSlingId() + "\n";
     }
 
     public String getMessage() {
